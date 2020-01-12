@@ -1,9 +1,9 @@
 
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-desktop.ini
-gulpfile.js
-package-lock.json
-package.json
+*.ini
+*.gulpfile.js
+*.package-lock.json
+*.package.json
 # dependencies
 /node_modules
 
