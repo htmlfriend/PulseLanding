@@ -117,3 +117,5 @@ $RECYCLE.BIN/
 *.max
 
 *.json
+
+gulpfile.js
