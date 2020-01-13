@@ -1,0 +1,48 @@
+.feed {
+    padding-bottom: 71px;
+
+    &__wrapper {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-bottom: 102px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__block {
+        margin-right: 61px;
+        margin-left: 62px;
+    }
+
+    &__img {
+        flex: 0 1 171px;
+        border-radius: 100%;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        text-align-last: left;
+        color: rgba(13, 13, 13, 255);
+    }
+
+    &__count {
+        margin-bottom: 19px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        color: rgba(100, 100, 100, 255);
+    }
+
+    &__descr {
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(13, 13, 13, 255);
+        text-align: left;
+    }
+}

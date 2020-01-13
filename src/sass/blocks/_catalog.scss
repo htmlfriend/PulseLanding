@@ -1,0 +1,54 @@
+.catalog {
+    padding: 0 0 100px 0;
+
+    &__tabs {
+        margin-top: 69px;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        ;
+    }
+
+    &__tab {
+        margin: 0 5px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: rgba(107, 107, 107, 255);
+        text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        transition: 0.5s all;
+
+        &:hover {
+            box-shadow: 2px 2px 20px 0 $main-color;
+            border: none;
+        }
+
+        div {
+            transform: skewX(25deg);
+        }
+
+        &_active {
+            border: none;
+            background: $main-color;
+            color: #ffffff;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+        display: none;
+        flex-wrap: wrap;
+
+        &_active {
+            display: flex;
+        }
+    }
+}
