@@ -3,9 +3,9 @@ $(document).ready(function() {
     speed: 1200,
     adaptiveHeight: true,
     prevArrow:
-      '<button type="button" class="slick-prev"><img src="img/icons/left.svg"></button>',
+      '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><img src="img/icons/right.svg"></button>',
+      '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
     responsive: [
       {
         breakpoint: 992,
@@ -16,35 +16,6 @@ $(document).ready(function() {
       }
     ]
   });
-
-  // const slider = tns({
-  //   container: ".carousel__inner",
-  //   items: 1,
-  //   slideBy: "page",
-  //   autoplay: false,
-  //   controls: false,
-  //   responsive: {
-  //     640: {
-  //       autoplay: false,
-  //       controls: false
-  //     },
-  //     700: {
-  //       touch: true,
-  //       autoWidth: true
-  //     },
-  //     900: {
-  //       items: 1
-  //     }
-  //   }
-  // });
-
-  // document
-  //   .querySelector(".next")
-  //   .addEventListener("click", () => slider.goTo("next"));
-
-  // document
-  //   .querySelector(".prev")
-  //   .addEventListener("click", () => slider.goTo("prev"));
 
   $("ul.catalog__tabs").on("click", "li:not(.catalog__tab_active)", function() {
     $(this)
@@ -96,7 +67,6 @@ $(document).ready(function() {
   function validateForms(form) {
     $(form).validate({
       rules: {
-        // simple rule, converted to {required:true}
         name: "required",
         phone: "required",
         email: {
