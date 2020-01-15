@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__official">
-                    <img src="img/icons/logo.png" alt="logo">
+                    <img src="icons/logo.png" alt="logo">
                 </a>
                 <div class="header__official">Официальный представитель<span>
                         Garmin, Polar, Suunto</span></div>
@@ -32,16 +33,16 @@
                 <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
                 <div class="promo__icons">
                     <div class="promo__icon">
-                        <img src="img/icons/main_screen/timer.png" alt="timer">
+                        <img src="icons/main_screen/timer.png" alt="timer">
                         Время подбора: 10 минут
                     </div>
                     <div class="promo__icon">
-                        <img src="img/icons/main_screen/hand-cart.png" alt="cart">
+                        <img src="icons/main_screen/hand-cart.png" alt="cart">
                         Бесплатная
                         доставка
                     </div>
                     <div class="promo__icon">
-                        <img src="img/icons/main_screen/messages.png" alt="messages">
+                        <img src="icons/main_screen/messages.png" alt="messages">
                         Ответим
                         на все вопросы
                     </div>
@@ -60,7 +61,7 @@
             <div class="features__list">
                 <div class="features__item">
                     <div class="features__icon">
-                        <img src="img/icons/advantages/cup.png" alt="">
+                        <img src="icons/advantages/cup.png" alt="cup">
                     </div>
                     <div class="features__name">Делимся опытом</div>
                     <div class="features__text">Наши сотрудники всегда готовы поделиться своим опытом,
@@ -69,7 +70,7 @@
                 </div>
                 <div class="features__item">
                     <div class="features__icon">
-                        <img src="img/icons/advantages/heart.png" alt="">
+                        <img src="icons/advantages/heart.png" alt="heart" class="animated_icon">
                     </div>
                     <div class="features__name">Заботимся о здоровье</div>
                     <div class="features__text">Мы работаем для того,
@@ -78,7 +79,7 @@
                 </div>
                 <div class="features__item">
                     <div class="features__icon">
-                        <img src="img/icons/advantages/shoe.png" alt="">
+                        <img src="icons/advantages/shoe.png" alt="shoe">
                     </div>
                     <div class="features__name">Учим бегать</div>
                     <div class="features__text">Помогаем с обучением
@@ -96,14 +97,14 @@
             <div class="consultation__descr">Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут</div>
             <form id="consultation-form" class="feed-form" action="#" method="POST">
-                <input required type="text" name="name" id="" placeholder="Ваше имя">
-                <input required name="phone" id="" placeholder="Ваш телефон">
-                <input required type="email" name="email" id="" placeholder="Ваш E-mail">
+                <input required type="text" name="name" placeholder="Ваше имя">
+                <input required name="phone" placeholder="Ваш телефон">
+                <input required type="email" name="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__wrapper">
                 <div class="carousel__inner">
@@ -117,13 +118,9 @@
                         <img src="img/slide_3.jpg" alt="slide">
                     </div>
                 </div>
-                <button type="button" class="prev"><img src="img/icons/left.svg">
-                </button>
-                <button type="button" class="next"><img src="img/icons/right.svg">
-                </button>
             </div>
         </div>
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
@@ -448,7 +445,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="feed__wrapper">
-                <div class="feed__item">
+                <div class="feed__item fadeInUp wow">
                     <img src="img/review_1.png" alt="Ирина Иванченко" class="feed__img">
                     <div class="feed__block">
                         <div class="feed__subtitle">Ирина Иванченко
@@ -462,7 +459,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed__item">
+                <div class="feed__item fadeInUp wow">
                     <img src="img/review_2.png" alt="Иван Сёмочкин" class="feed__img">
                     <div class="feed__block">
                         <div class="feed__subtitle">Иван Сёмочкин</div>
@@ -477,7 +474,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed__item">
+                <div class="feed__item fadeInUp wow">
                     <img src="img/review_3.png" alt="Юлия Дашкина" class="feed__img">
                     <div class="feed__block">
                         <div class="feed__subtitle">Юлия Дашкина</div>
@@ -507,9 +504,9 @@
                     ">8 (499) 922-89-74
             </a>
             <div class="footer__social">
-                <a class="footer__social-item" href="#"><img src="img/icons/facebook.svg" alt="facebook"></a>
-                <a class="footer__social-item" href="#"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                <a class="footer__social-item" href="#"><img src="img/icons/pinterest.svg" alt="pinterest"></a>
+                <a class="footer__social-item" href="#"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a class="footer__social-item" href="#"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a class="footer__social-item" href="#"><img src="icons/pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
     </footer>
@@ -533,7 +530,7 @@
             </div>
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
-            <form class="feed-form feed-form_mt25" action="#" method="#">
+            <form class="feed-form feed-form_mt25">
                 <input required type="text" name="name" id="" placeholder="Ваше имя">
                 <input required name="phone" id="" placeholder="Ваш телефон">
                 <input required type="email" name="email" id="" placeholder="Ваш E-mail">
@@ -549,13 +546,16 @@
                 в ближайшее время!</div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="pageup">
+    </a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
